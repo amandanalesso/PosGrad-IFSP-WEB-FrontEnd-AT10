@@ -1,0 +1,16 @@
+<mat-card class="todo-card">
+  <mat-card-header>
+    <mat-card-title>To do List </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="todo-container">
+      <mat-list role="list">
+        <mat-list-item *ngFor="let todo of todos" role="listitem">
+          <mat-checkbox [checked]="todo.completed" (change)="toggleComplete(todo)">
+            <span [class.completed]="todo.completed">{{ todo.todo }}</span>
+          </mat-checkbox>
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </mat-card-content>
+</mat-card>

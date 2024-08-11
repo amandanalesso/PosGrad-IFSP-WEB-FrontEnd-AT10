@@ -1,0 +1,79 @@
+.todo-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+.todo-container {
+  margin: 0;
+}
+
+mat-card-title{
+  margin-left: 30px;
+  padding-bottom: 20px;
+  color: #460166;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+mat-list-item {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+mat-checkbox {
+  margin-right: 10px;
+}
+
+span {
+  flex: 1;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.54);
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/* Mobile (até 600px) */
+@media (max-width: 600px) {
+  .todo-card {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  span {
+    font-size: 14px;
+  }
+}
+
+/* Tablet (601px a 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .todo-card {
+    max-width: 90%;
+    padding: 18px;
+  }
+
+  span {
+    font-size: 15px;
+  }
+}
+
+/* Desktop (acima de 900px) */
+@media (min-width: 901px) {
+  .todo-card {
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+}
